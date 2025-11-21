@@ -1,0 +1,67 @@
+<div r><div a></div></div>
+<div r><div b></div></div>
+<div r><div c></div></div>
+<style>
+  body {
+    background: #bde4c1;
+    padding: 8;
+  }
+
+  div[r] {
+    width: 100%;
+  }
+
+  div[a],
+  div[c] {
+    background: #9f6766;
+    height: 100px;
+  }
+
+  div[b] {
+    background: #9f6766;
+    width: 195px;
+    height: 68px;
+    margin: 0 auto;
+  }
+  div[a] {
+    position: relative;
+    width: 87px;
+    left: 282px;
+    rotate: 180deg;
+    clip-path: polygon(
+      0% 0%,
+      35% 0%,
+      35% 30%,
+      0% 30%,
+      0% 70%,
+      35% 70%,
+      35% 100%,
+      53% 100%,
+      53% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%,
+      0% 0%
+    );
+  }
+
+  div[c] {
+    position: relative;
+    width: 87px;
+    clip-path: polygon(
+      0% 0%,
+      35% 0%,
+      35% 30%,
+      0% 30%,
+      0% 70%,
+      35% 70%,
+      35% 100%,
+      53% 100%,
+      53% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%,
+      0% 0%
+    );
+  }
+</style>
