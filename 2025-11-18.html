@@ -1,0 +1,43 @@
+<div class="grid">
+  <div a></div>
+  <div b></div>
+  <div c></div>
+</div>
+
+<style>
+  body {
+    background: #555fd9;
+    margin: 0px;
+  }
+
+  div.grid {
+    display: grid;
+    grid-template-columns: 90px auto 90px;
+    grid-template-rows: 50px auto 50px;
+    column-gap: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  div[a],
+  div[b],
+  div[c] {
+    grid-row-start: 2;
+    border-top: 20px #f2a842 solid;
+    border-bottom: 20px #f2a842 solid;
+  }
+
+  div[a] {
+    grid-column-start: 1;
+  }
+
+  div[c] {
+    grid-column-start: 3;
+  }
+
+  div[b] {
+    grid-column-start: 2;
+    border-left: 40px #f2a842 solid;
+    border-right: 40px #f2a842 solid;
+  }
+</style>
