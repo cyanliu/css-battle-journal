@@ -1,0 +1,42 @@
+<div g1></div>
+<div r1></div>
+<div g2></div>
+<div r2></div>
+<style>
+  body {
+    background: #eed9d9;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto 50px 50px 50px auto;
+    grid-template-rows: auto 50px 50px 50px auto;
+  }
+
+  div[g1],
+  div[g2] {
+    grid-column-start: 3;
+    background: #668884;
+    border-radius: 50px 0px 0px 50px;
+  }
+  div[g1] {
+    grid-row-start: 2;
+  }
+  div[g2] {
+    grid-row-start: 4;
+  }
+
+  div[r1],
+  div[r2] {
+    grid-row-start: 3;
+    background: #c67455;
+  }
+  div[r1] {
+    grid-column-start: 2;
+    border-radius: 50px 0px 0px 50px;
+  }
+  div[r2] {
+    grid-column-start: 4;
+    border-radius: 0px 50px 50px 0px;
+  }
+</style>
