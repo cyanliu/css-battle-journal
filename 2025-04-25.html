@@ -1,0 +1,44 @@
+<div class="l">
+  <div class="tall"></div>
+  <div class="short"></div>
+</div>
+<div class="r">
+  <div class="tall"></div>
+  <div class="short"></div>
+</div>
+<style>
+  body {
+    background: #405c48;
+    margin: 20px 44px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .l,
+  .r {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 12px;
+  }
+
+  .tall,
+  .short {
+    background: #f7ec7d;
+  }
+
+  .tall {
+    height: 260px;
+    width: 40px;
+  }
+
+  .short {
+    height: 100px;
+    width: 100px;
+  }
+
+  .r {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+</style>
